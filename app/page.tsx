@@ -7,6 +7,7 @@ import Maps from "./reusables/Pooplogg_Map";
 import Pooplogg_Map from "./reusables/Pooplogg_Map";
 import Pooplogg_LG_Data from "./reusables/Pooplogg_LG_Data";
 import { StateData } from "./reusables/StateData";
+import FlowDataCharts from "./reusables/FlowDataCharts"
 export default function Home() {
   return (
     <div className="">
@@ -15,11 +16,14 @@ export default function Home() {
         <div className="flex-1">
           <Chart/>
         </div>
+        
         <div >
           <RecordTable/>
         </div>
       </div>
-
+      <div>
+        <FlowDataCharts/>
+      </div>
       <div className="">
         <WaterInfo/>
       </div>
